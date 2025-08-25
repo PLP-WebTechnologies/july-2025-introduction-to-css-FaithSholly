@@ -1,73 +1,70 @@
-
-body {
+/* General reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #fafafa;
-    
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
 header {
-    background-color: lightblue;
+    background: #4CAF50;
+    color: white;
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid navy;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-header h1 {
-    color: darkblue;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-style: italic;
-}
-
+/* Section styling */
 section {
-    margin: 20px;
-    padding: 15px;
-    border: 2px solid #ccc;
-    background-color: #f9f9f9;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Features list */
+.features ul {
+    list-style: square inside;
+    padding-left: 10px;
+}
+
+.features li {
+    margin: 5px 0;
+}
+
+/* Box Model Demo */
+.box {
+    background: #e3f2fd;
+    border: 3px solid #2196F3;
+    padding: 20px;
+    margin: 15px;
     border-radius: 6px;
 }
 
-.intro h2,
-.features h2,
-.box-demo h2 {
-    color: darkgreen;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 30px;
-}
-
-.box {
-    margin: 20px;
-    padding: 15px;
-    border: 5px solid tomato;
-    background-color: #ffe4e1;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: teal;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: darkslategray;
-}
-
-
+/* Footer */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
+    margin-top: 20px;
     padding: 10px;
-    font-size: 0.9rem;
+    background: #333;
+    color: white;
+    border-radius: 8px;
 }
