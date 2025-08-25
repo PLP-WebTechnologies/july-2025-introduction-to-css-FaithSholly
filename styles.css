@@ -52,11 +52,32 @@ h1, h2 {
 
 /* Box Model Demo */
 .box {
-    background: #e3f2fd;
-    border: 3px solid #2196F3;
-    padding: 20px;
-    margin: 15px;
+    background: #fff8e1;       /* Content area */
+    border: 5px solid #ff9800; /* Border area */
+    padding: 20px;             /* Padding area */
+    margin: 25px;              /* Margin area */
     border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+/* Extra visual guides */
+.box::before {
+    content: "Margin";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.box::after {
+    content: "Border + Padding + Content";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #777;
 }
 
 /* Footer */
